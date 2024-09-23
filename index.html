@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fifth Assignment</title>
+  <!-- Font: Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Font Lexend -->
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+  <!-- Link: TailwindCSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#111111',
+            secondary: 'rgba(17, 17, 17, 0.7)',
+            buttonColor: '#B4F461',
+            navBackground: '#F9F7F3',
+
+          },
+          fontFamily: {
+            Lexend: 'Lexend',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-Lexend">
+  <header>
+    <nav class="bg-navBackground">
+      <div class="w-[1180px] mx-auto pt-6 pb-16">
+        <div class="flex items-center justify-between">
+          <div>
+            <button class="px-8 py-3 rounded-lg bg-buttonColor text-primary font-semibold text-xl">Blog</button>
+          </div>
+          <div class="flex items-center gap-4">
+            <img class="h-12 w-12" src="assets/logo.png" alt="">
+            <h4 class="text-primary text-xl font-semibold ">Donate Bangladesh</h4>
+          </div>
+          <div class="flex items-center gap-4">
+            <img class="h-5 w-5" src="assets/coin.png" alt="">
+            <p class="text-secondary text-xl">
+              <span id="">5500</span> BDT
+            </p>
+          </div>
+  
+        </div>
+      </div>
+
+    </nav>
+    <!-- banner section -->
+     <section class="w-[1140px] mx-auto">
+      <div class="pt-20 pb-8 flex items-center gap-4 justify-center">
+        <button class="px-8 py-4 rounded-lg bg-buttonColor text-primary font-semibold text-xl">Donation</button>
+        <button class="text-secondary border border-solid border-[rgba(17, 17, 17, 0.3)] px-8 py-4 rounded-lg font-medium">History</button>
+      </div>
+      
+     </section>
+  </header>
+  
+  
+</body>
+</html>
