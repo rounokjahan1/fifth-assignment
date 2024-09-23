@@ -71,15 +71,63 @@
             <img class="w-full h-full" src="assets/noakhali.png" alt="">
           </div>
           <div>
-            <div class="flex w-28 items-center px-4 py-[10px] gap-1 rounded-lg bg-[#F3F3F3] mb-4 border">
-              <img class="h-4 w-4" src="assets/coin.png" alt="">
-              <p class="text-secondary text-base font-normal">
-                <span id="">0</span> BDT
-              </p>
+            <div class="inline-block">
+              <div class="flex items-center px-4 py-[10px] gap-2 rounded-lg bg-[#F3F3F3] mb-4 border">
+                <img class="h-4 w-4" src="assets/coin.png" alt="">
+                <p class="text-secondary text-base font-normal">
+                  <span id="">0</span> BDT
+                </p>
+              </div>
             </div>
             <h4 class="text-primary text-xl font-bold mb-4">Donate for Flood at Noakhali, Bangladesh</h4>
             <p class="text-secondary text-base font-light leading-6 mb-4"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
             <div class="mb-4">
+              <input class="w-full border border-[rgba(17, 17, 17, 0.1)] p-5 rounded-lg bg-white placeholder:text[rgba(17, 17, 17, 0.4)]" type="number" placeholder="Write Donation Amount">
+            </div>
+            <button onclick="my_modal_1.showModal()" class="w-full bg-buttonColor text-primary text-xl font-semibold px-8 py-4 rounded-lg">Donate Now</button>
+            <dialog id="my_modal_1" class="modal">
+              <form method="dialog"
+                  class="modal-box py-8 px-8 flex flex-col justify-center items-center">
+                  <h3 class="font-bold text-5xl text-primary mb-6">
+                      Congrates!
+                  </h3>
+                  <img class="w-10 h-10" src="assets/coin.png" alt="">
+                  <div class="text-center mt-8 mb-6">
+                      <p class="font-medium text-secondary">
+                          You Have Donated for Humankind
+                      </p>
+                  </div>
+                  <h3 class="font-bold text-2xl text-primary mb-6">
+                    Successfully
+                  </h3>
+
+                  <button id="btn-close-confirmation"
+                      class="flex items-center px-4 py-[10px] rounded-lg bg-[#F2F2F2] text-secondary font-semibold">
+                      Close Confirmation
+                  </button>
+              </form>
+          </dialog>    
+          </div>
+        </div>
+      </section>
+    <!-- card 2 -->
+      <section class="w-[1140px] mx-auto">
+        <div class="grid grid-cols-2 gap-8 border border-solid border-[rgba(17, 17, 17, 0.1)] rounded-2xl p-8 mb-8">
+          <div class="max-w-[522px]">
+            <img class="w-full h-full" src="assets/feni.png" alt="">
+          </div>
+          <div>
+            <div class="inline-block">
+              <div class="flex items-center px-4 py-[10px] gap-2 rounded-lg bg-[#F3F3F3] mb-4 border">
+                <img class="h-4 w-4" src="assets/coin.png" alt="">
+                <p class="text-secondary text-base font-normal">
+                  <span id="">600</span> BDT
+                </p>
+              </div>
+            </div>
+            <h4 class="text-primary text-xl font-bold mb-4">Donate for Flood Relief in Feni, Bangladesh</h4>
+            <p class="text-secondary text-base font-light leading-7 mb-5">Support the flood relief efforts in Feni, Bangladesh, as countless families face devastation. Your donation will provide essential supplies and assistance to those affected by this disaster. Every contribution, no matter the size, makes a difference. Join us in making a positive impact and helping rebuild lives in the community during this critical time.</p>
+            <div class="mb-5">
               <input class="w-full border border-[rgba(17, 17, 17, 0.1)] p-5 rounded-lg bg-white placeholder:text[rgba(17, 17, 17, 0.4)]" type="number" placeholder="Write Donation Amount">
             </div>
             <button onclick="my_modal_1.showModal()" class="w-full bg-buttonColor text-primary text-xl font-semibold px-8 py-4 rounded-lg">Donate Now</button>
