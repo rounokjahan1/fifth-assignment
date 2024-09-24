@@ -66,14 +66,14 @@ function handleDonation(buttonId, inputId, currentAmountId, location){
  }
 
 
-//for card-1 donate now button
+//for first card donate now button
  handleDonation('noakhali-donate-now-btn', 'noakhali-donation-input', 'noakhali-current-donation-amount', 'Flood Relief in noakhali');
 
-//for card-2 donate now button
+//for second card donate now button
 handleDonation('feni-donate-now-btn', 'feni-donation-input', 'feni-current-donation-amount', 'Flood Relief in feni');
 
 
-//for card-3 donate now button
+//for third card donate now button
 handleDonation('quota-donate-now-btn', 'quota-donation-input', 'quota-current-donation-amount', 'Injured in the Quota Movement');
  
 // click history tab
