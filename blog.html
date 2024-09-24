@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fifth Assignment</title>
+  <!-- Font: Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Font Lexend -->
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+  <!-- Link: font awesome -->
+  <script src="https://kit.fontawesome.com/c250c1fe21.js" crossorigin="anonymous"></script>
+  <!-- Link: TailwindCSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#111111',
+            secondary: 'rgba(17, 17, 17, 0.7)',
+            buttonColor: '#B4F461',
+            navBackground: '#F9F7F3',
+
+          },
+          fontFamily: {
+            Lexend: 'Lexend',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <nav class="bg-navBackground">
+      <div class="max-w-[1180px] mx-auto pt-6 pb-16">
+        <div class="flex items-center justify-between">
+          <div>
+            <button class="px-8 py-3 rounded-lg bg-buttonColor text-primary font-semibold text-xl"><a href="index.html">Home</a></button>
+          </div>
+          <div class="flex items-center gap-4">
+            <img class="h-12 w-12" src="assets/logo.png" alt="">
+            <h4 class="text-primary text-xl font-semibold ">Donate Bangladesh</h4>
+          </div>
+          <div class="flex items-center gap-4">
+            <img class="h-5 w-5" src="assets/coin.png" alt="">
+            <p class="text-secondary text-xl font-medium">
+              <span id="">5500</span> BDT
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </nav>
+  </header>
+  <main>
+    <!-- FAQ section -->
+     <section class="max-w-[1140px] mx-auto ">
+      <div class="border border-solid border-[rgba(17, 17, 17, 0.1)] rounded-2xl p-8 my-16">
+        <div class="flex gap-2 items-center mb-6">
+          <h2 class="text-primary font-bold text-5xl">Important FAQ</h2>
+          <i class="fa-regular fa-circle-question text-5xl "></i>
+        </div>
+        <div class="space-y-2">
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-primary text-2xl font-semibold ">What is the Document Object Model (DOM)?</div>
+            <div class="collapse-content text-seondary font-medium text-lg">
+              <p>The Document Object Model (DOM) is a tree-like representation of a web page's structure, where each element is a node. It allows developers to manipulate content and elements using JavaScript. This makes it easy to change text, add elements, or respond to user actions dynamically.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-primary text-2xl font-semibold ">How do you select an element from the DOM?</div>
+            <div class="collapse-content  text-seondary font-medium text-lg space-y-2">
+              <p>I can select an element from the DOM using these methods: </p>
+              <p>1. By ID: document.getElementById('id') selects an element with a specific ID.</p>
+              <p>2. By class: document.getElementsByClassName('class') selects elements with a certain class.</p>
+              <p> 3. By CSS selector: document.querySelector('selector') selects the first element that matches the given CSS selector.</p>
+              <p> 4. To select multiple elements with a CSS selector: document.querySelectorAll('selector') selects all elements in the DOM that match the specified CSS selector and returns them as a NodeList.</p>
+             
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-primary text-2xl font-semibold">What is event delegation in the context of the DOM, and why is it useful?</div>
+            <div class="collapse-content  text-seondary font-medium text-lg space-y-2">
+              <p>Event delegation is a technique that involves adding a single event listener to a parent element, allowing it to handle events for all its child elements. When a child element triggers an event, it bubbles up to the parent, which can process it. This method improves performance, reduces code complexity, and automatically works with dynamically added elements.</p>
+              
+            </div>
+          </div>
+     
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-primary text-2xl font-semibold">How do you manipulate an element's attributes and styles using the DOM?</div>
+            <div class="collapse-content  text-seondary font-medium text-lg space-y-2">
+              <p>To manipulate an element's attributes and styles using the DOM:</p>
+              <p>1. Change Attributes: Use element.setAttribute('attributeName', 'value') to change an attribute. </p>
+              <p>2. Get Attributes: Use element.getAttribute('attributeName') to retrieve an attribute's value.</p>
+              <p> 3. Change Styles: Use element.style.propertyName = 'value' to change a specific style.</p>
+              <p>4. Add/Remove Classes: Use element.classList.add('className') to add a class or element.classList.remove('className') to remove one.</p>  
+             
+                
+              
+            </div>
+          </div>
+        </div>
+      </div>
+     </section>
+
+  </main>
+  
+</body>
+</html>
