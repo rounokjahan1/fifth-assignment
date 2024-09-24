@@ -30,7 +30,7 @@ document.getElementById('noakhali-donate-now-btn').addEventListener('click', fun
   //Adding a new div to history section
   const historyItem = document.createElement('div');
 
-  historyItem.className = "bg-white border border-solid border-[rgba(17, 17, 17, 0.1)] rounded-2xl p-5 lg:p-8";
+  historyItem.className = "bg-white border border-solid border-[rgba(17, 17, 17, 0.1)] rounded-2xl mx-5 lg:mx-0 mb-6 p-5 lg:p-8";
 
   historyItem.innerHTML = `
     <h4 class="text-primary font-bold text-xl mb-4">
@@ -80,7 +80,7 @@ document.getElementById('feni-donate-now-btn').addEventListener('click', functio
     // history
   const historyItem = document.createElement('div');
 
-  historyItem.className = "bg-white border border-solid border-[rgba(17, 17, 17, 0.1)] rounded-2xl p-5 lg:p-8";
+  historyItem.className = "bg-white border border-solid border-[rgba(17, 17, 17, 0.1)] rounded-2xl mx-5 lg:mx-0 mb-6 p-5 lg:p-8";
 
   historyItem.innerHTML = `
     <h4 class="text-primary font-bold text-xl mb-4">
@@ -133,7 +133,7 @@ document.getElementById('quota-donate-now-btn').addEventListener('click', functi
     // history
     const historyItem = document.createElement('div');
 
-    historyItem.className = "bg-white border border-solid border-[rgba(17, 17, 17, 0.1)] rounded-2xl p-5 lg:p-8";
+    historyItem.className = "bg-white border border-solid border-[rgba(17, 17, 17, 0.1)] rounded-2xl mx-5 lg:mx-0 mb-6 p-5 lg:p-8";
 
     historyItem.innerHTML = `
     <h4 class="text-primary font-bold text-xl mb-4">
