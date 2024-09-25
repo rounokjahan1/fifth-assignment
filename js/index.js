@@ -2,6 +2,17 @@ let accountBalance = getTextFieldValueById('account-balance');
 const historyTab = document.getElementById('history-tab');
 const donationTab = document.getElementById('donation-tab');
 
+// make blur navbar
+window.addEventListener('scroll', function(){
+  if(window.scrollY > 30){
+    document.getElementById("navbar").classList.remove('bg-navBackground');
+    document.getElementById("banner").classList.remove('bg-white');
+  } else{
+    document.getElementById("navbar").classList.add('bg-navBackground');
+    document.getElementById("banner").classList.add('bg-white');
+  }
+})
+
 //From shared function get number input field value by id 
 function getInputFieldValueById(id){
   return parseFloat(document.getElementById(id).value);
@@ -76,11 +87,11 @@ handleDonation('feni-donate-now-btn', 'feni-donation-input', 'feni-current-donat
 //for third card donate now button
 handleDonation('quota-donate-now-btn', 'quota-donation-input', 'quota-current-donation-amount', 'Injured in the Quota Movement');
  
-// click history tab
+// click history tab function
 
 historyTab.addEventListener('click', function(){
   donationTab.classList.add("bg-white","font-medium","border",
-"border-borderColor");
+  "border-borderColor");
   donationTab.classList.remove("bg-buttonColor", "font-semibold", "border-buttonColor");
   historyTab.classList.add("bg-buttonColor", "font-semibold", "border-buttonColor");  
   historyTab.classList.remove("bg-white","font-medium","border",
@@ -92,7 +103,7 @@ historyTab.addEventListener('click', function(){
   document.getElementById('third-card').classList.add('hidden');
 }) 
 
-// click donation tab
+// click donation tab function
 donationTab.addEventListener('click', function(){
   historyTab.classList.add("bg-white","font-medium","border",
   "border-borderColor");
